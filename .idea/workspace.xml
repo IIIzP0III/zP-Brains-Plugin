@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="Inital Push for AI Plugin for papermc">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_plugin_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/api_0_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/openai-java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaiconnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zP Brain-plugin.iml" afterDir="false" />
+    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openai.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +52,6 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/home/level2/programming/libraries",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.24559858",
@@ -79,11 +67,20 @@
       <option name="presentableId" value="Default" />
       <updated>1678012293978</updated>
     </task>
+    <task id="LOCAL-00001" summary="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console">
+      <created>1678041585982</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678041585982</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inital Push for AI Plugin for papermc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inital Push for AI Plugin for papermc" />
+    <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

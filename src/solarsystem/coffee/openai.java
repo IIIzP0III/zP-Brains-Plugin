@@ -1,11 +1,8 @@
 package solarsystem.coffee;
 
 
-import com.theokanning.openai.OpenAiApi;
 import com.theokanning.openai.completion.*;
-import com.theokanning.openai.service.AuthenticationInterceptor;
 import com.theokanning.openai.service.OpenAiService;
-import com.theokanning.openai.OpenAiResponse;
 
 
 import javax.naming.AuthenticationException;
