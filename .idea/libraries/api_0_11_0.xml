@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="api-0.11.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../libraries/api-0.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../libraries/client-0.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../libraries/service-0.11.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
