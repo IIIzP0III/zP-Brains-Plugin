@@ -8,7 +8,7 @@ public class main {
     public static void main(String[] args) throws AuthenticationException {
 
 
-        openai.main(args);
+        openaicomplete.main(args);
     }
 
 

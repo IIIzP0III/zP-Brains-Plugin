@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="split into openai chat and openai c">
+      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaichat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaicomplete.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +54,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/home/level2/programming/libraries",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.24559858",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="solarsystem.coffee" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,13 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678041585982</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console&#10;&#10;Successful cli program for openai Chat">
+      <created>1678051399875</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678051399875</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inital Push for AI Plugin for papermc" />
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console" />
+    <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console&#10;&#10;Successful cli program for openai Chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console&#10;&#10;Successful cli program for openai Chat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
