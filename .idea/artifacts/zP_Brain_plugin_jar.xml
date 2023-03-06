@@ -3,10 +3,19 @@
     <output-path>$PROJECT_DIR$/out/artifacts/zP_Brain_plugin_jar</output-path>
     <root id="archive" name="zP Brain-plugin.jar">
       <element id="module-output" name="zP Brain-plugin" />
-      <element id="file-copy" path="$PROJECT_DIR$/../libraries/client-0.11.0.jar" />
-      <element id="file-copy" path="$PROJECT_DIR$/../libraries/service-0.11.0.jar" />
-      <element id="library" level="project" name="api-0.11.0" />
-      <element id="library" level="project" name="libraries" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/api-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/client-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/service-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/okio-1.17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/rxjava-2.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/okhttp-3.14.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/retrofit-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/jackson-core-2.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/adapter-rxjava2-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/reactive-streams-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/converter-jackson-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/jackson-databind-2.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libraries/jackson-annotations-2.9.0.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

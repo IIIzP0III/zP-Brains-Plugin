@@ -31,8 +31,6 @@ public class openaicomplete {
             if (input.isEmpty()) {
                 continue;
             }
-
-
             //service.createCompletion(completionRequest).getChoices().forEach(System.out::println);
             //completion format
             CompletionRequest completionRequest = null;

@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="split into openai chat and openai c">
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaichat.java" afterDir="false" />
+    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Vault.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/utils/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_plugin_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_plugin_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaicomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openaichat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaichat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openaicomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaicomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openaiconnector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zP Brain-plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zP Brain-plugin.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +38,19 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="39d0e2fa-4300-4aeb-971c-b11ca62405c8" />
+        <option name="url" value="https://github.com/IIIzP0III/zP-Brains-Plugin" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,14 +75,21 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/level2/programming/libraries",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.24559858",
-    "project.structure.side.proportion": "0.2"
+    "last_opened_file_path": "/home/level2/programming/zP Brain-plugin/lib",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.23025335",
+    "project.structure.side.proportion": "0.26951522"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="solarsystem.coffee.utils" />
       <recent name="solarsystem.coffee" />
     </key>
   </component>
@@ -87,14 +116,22 @@
       <option name="project" value="LOCAL" />
       <updated>1678051399875</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="split class into openai chat and openai complete&#10;Both working">
+      <created>1678056569584</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678056569584</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inital Push for AI Plugin for papermc" />
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console" />
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console&#10;&#10;Successful cli program for openai Chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console&#10;&#10;Successful cli program for openai Chat" />
+    <MESSAGE value="split class into openai chat and openai complete&#10;Both working" />
+    <option name="LAST_COMMIT_MESSAGE" value="split class into openai chat and openai complete&#10;Both working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

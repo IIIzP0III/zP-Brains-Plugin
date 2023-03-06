@@ -27,5 +27,69 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="libraries" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/AI-Pal-GPT/src" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/api/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/api/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/bootstrap/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/chat/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/chat/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/config/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/config/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/event/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/event/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/log/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/module/cmd-alert/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/module/cmd-find/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/module/cmd-list/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/module/cmd-send/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/module/cmd-server/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/module/reconnect-yaml/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/native/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/native/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/protocol/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/protocol/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/proxy/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/proxy/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/query/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/libplugins/plugins/BungeeCord/BungeeCord-master/slf4j/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/src" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/Bukkit/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/Bukkit/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/CraftBukkit/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/CraftBukkit/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/Spigot/Spigot-API/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/Spigot/Spigot-API/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/Spigot/Spigot-Server/src/main/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/Spigot/Spigot-Server/src/test/java" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/work/decompile-732abad1" />
+          <root url="file://$MODULE_DIR$/../ZorgProduction_2.0/trash/work/decompile-latest" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-8.0.26.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/spigot-1.18.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

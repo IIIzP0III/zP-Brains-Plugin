@@ -1,12 +1,10 @@
 package solarsystem.coffee;
 
-
 import com.theokanning.openai.completion.*;
 import com.theokanning.openai.completion.chat.ChatCompletionRequest;
 import com.theokanning.openai.completion.chat.ChatCompletionResult;
 import com.theokanning.openai.completion.chat.ChatMessage;
 import com.theokanning.openai.service.OpenAiService;
-
 
 import javax.naming.AuthenticationException;
 import java.util.ArrayList;

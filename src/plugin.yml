@@ -1,0 +1,18 @@
+## YAML Template.
+---
+
+name: zP_Brain-plugin
+version: 1
+load: STARTUP
+author: zP
+main: solarsystem.coffee.zPBrainPlugin
+softdepend: [Vault, Essentials]
+api-version: 1.18
+
+commands:
+  airequest:
+    description: /ai-request "Write A Request Here"
+    permission: Brains.openai
+  personality:
+    description: /personality number
+    permission: Brains.openai
