@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Vault.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/utils/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_plugin_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_plugin_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ZorgHomes1_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/utils/configIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ZorgHomes1.18/ZorgHomes1.18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ZorgHomes1.18/ZorgHomes1.18.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ZorgHomes1.18/src/whitephoenix/online/ZorgHomes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ZorgHomes1.18/src/whitephoenix/online/ZorgHomes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openaichat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaichat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openaicomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/openaicomplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openaiconnector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zP Brain-plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zP Brain-plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +71,9 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/level2/programming/zP Brain-plugin/lib",
-    "project.structure.last.edited": "Artifacts",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/level2/programming/ZorgHomes1.18",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.23025335",
     "project.structure.side.proportion": "0.26951522"
   }
@@ -123,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678056569584</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="OpenAI API Plugin for papermc completed -&#10;Added fancy colors ingame&#10;/airequest &amp; /personality 0-4&#10;Added 5 personalities&#10;Plugin working">
+      <created>1678072770308</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678072770308</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,7 +135,8 @@
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console" />
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console&#10;&#10;Successful cli program for openai Chat" />
     <MESSAGE value="split class into openai chat and openai complete&#10;Both working" />
-    <option name="LAST_COMMIT_MESSAGE" value="split class into openai chat and openai complete&#10;Both working" />
+    <MESSAGE value="OpenAI API Plugin for papermc completed -&#10;Added fancy colors ingame&#10;/airequest &amp; /personality 0-4&#10;Added 5 personalities&#10;Plugin working" />
+    <option name="LAST_COMMIT_MESSAGE" value="OpenAI API Plugin for papermc completed -&#10;Added fancy colors ingame&#10;/airequest &amp; /personality 0-4&#10;Added 5 personalities&#10;Plugin working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

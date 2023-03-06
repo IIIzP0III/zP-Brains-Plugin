@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ZorgHomes1.18/ZorgHomes1.18.iml" filepath="$PROJECT_DIR$/../ZorgHomes1.18/ZorgHomes1.18.iml" />
       <module fileurl="file://$PROJECT_DIR$/zP Brain-plugin.iml" filepath="$PROJECT_DIR$/zP Brain-plugin.iml" />
     </modules>
   </component>

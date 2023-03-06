@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ZorgHomes1.18">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../ZorgHomes1.18/out/artifacts/ZorgHomes1_18_jar/ZorgHomes1.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
