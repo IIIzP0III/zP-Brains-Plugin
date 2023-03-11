@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ZorgHomes1_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/utils/configIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZorgHomes1.18/ZorgHomes1.18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ZorgHomes1.18/ZorgHomes1.18.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZorgHomes1.18/src/whitephoenix/online/ZorgHomes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ZorgHomes1.18/src/whitephoenix/online/ZorgHomes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678072770308</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added config support&#10;//Creates config if not exists&#10;//Reads values from plugins/pluginfolder/config.yml">
+      <created>1678122836796</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678122836796</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,7 +137,8 @@
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console&#10;&#10;Successful cli program for openai Chat" />
     <MESSAGE value="split class into openai chat and openai complete&#10;Both working" />
     <MESSAGE value="OpenAI API Plugin for papermc completed -&#10;Added fancy colors ingame&#10;/airequest &amp; /personality 0-4&#10;Added 5 personalities&#10;Plugin working" />
-    <option name="LAST_COMMIT_MESSAGE" value="OpenAI API Plugin for papermc completed -&#10;Added fancy colors ingame&#10;/airequest &amp; /personality 0-4&#10;Added 5 personalities&#10;Plugin working" />
+    <MESSAGE value="Added config support&#10;//Creates config if not exists&#10;//Reads values from plugins/pluginfolder/config.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added config support&#10;//Creates config if not exists&#10;//Reads values from plugins/pluginfolder/config.yml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

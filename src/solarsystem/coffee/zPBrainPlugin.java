@@ -26,7 +26,7 @@ public class zPBrainPlugin extends JavaPlugin {
     public String API_Key = "";
     @Override
     public void onEnable() {
-        getLogger().info("zPBrainPlugin deactivated");
+        getLogger().info("zPBrainPlugin Initialized");
         configloader();
 
     }
@@ -87,7 +87,11 @@ public class zPBrainPlugin extends JavaPlugin {
                     for(String a : args){
                         querry += a + " ";
                     }
-                    String Response = solarsystem.coffee.OpenAiChat.Request(querry, tokens, PersoanlityID);
+
+                    ////
+                    String Response = solarsystem.coffee.AIInterface.OpenAiChat.Request(querry, tokens, PersoanlityID);
+                    ////
+
 
                     //String Response = solarsystem.coffee.OpenAiChat.Request(querry, "512",PersoanlityID);
 
@@ -97,24 +101,40 @@ public class zPBrainPlugin extends JavaPlugin {
                     AIAnswer = Response.split("\\), finishReason");
                     Response = AIAnswer[0];
 
-                    Bukkit.broadcastMessage(C.color("&3 //////////////// \n&2 #AI Request# \n" + querry + "\n" +
-                            "&3////////////////\n&6 " + Response + "\n&3////////////////"));
+                    Bukkit.broadcastMessage(
+                            C.color("" +
+                                            "&3 //////////////// \n" +
+                                            player.getDisplayName()  +
+                                    " &6==>#AI-" + PersoanlityID + "# " +
+                                            "\n" + querry    +"\n"   +
+                                            "&3////////////////\n"   +
+                                            "&6 " + Response + ""    +
+                                            "\n&3////////////////"
+                            )
+
+                    );
+
                     //Bukkit.broadcastMessage(C.color("&0 AI: &6" + Response));
 
                 }
 
             }
             if(input.equals("personality")){
-                player.sendMessage("There are 5 Personalites available: type '/personality 0-4'");
-                if(args.length>0){
-                    if(Integer.valueOf(args[0])<5){
-                        PersoanlityID = Integer.valueOf(args[0]);
+                if(args.length==0) {
+                    player.sendMessage("There are 5 Personalites available: type '/personality 0-4'");
+                    player.sendMessage("0 = Devon");
+                    player.sendMessage("1 = AI-Pal");
+                    player.sendMessage("2 = AGI Assistant");
+                    player.sendMessage("3 = Empty");
+                    player.sendMessage("4 = Empty");
+                } else {
+                    if (args.length > 0) {
+                        if (Integer.valueOf(args[0]) < 5) {
+                            PersoanlityID = Integer.valueOf(args[0]);
+                        }
                     }
                 }
-
-
-                }
-
+            }
 
         }
         return true;
