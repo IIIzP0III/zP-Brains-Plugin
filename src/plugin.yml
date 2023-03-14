@@ -10,6 +10,9 @@ softdepend: [Vault, Essentials]
 api-version: 1.18
 
 commands:
+  luz:
+    description: /luz Mage ability, cast Light
+    permission: Brains.zP.luz
   airequest:
     description: /ai-request "Write A Request Here"
     permission: Brains.openai

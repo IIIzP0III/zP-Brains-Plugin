@@ -138,9 +138,10 @@ public class zPBrainPlugin extends JavaPlugin {
             if (input.equals("luz")) {
                 Location pos = player.getLocation();
                 Block swap_current_blog = pos.getBlock();
-                if(swap_current_blog.getType().toString()=="AIR"){
-                        BlockData air = null;
-
+                //if(swap_current_blog.getType().toString()=="AIR"){
+                if(swap_current_blog.getType().isAir()){
+                        //Block.isAir()
+                        swap_current_blog.setType(Material.LIGHT);
                         //world.setBlockData(pos,);
                 }
             }
