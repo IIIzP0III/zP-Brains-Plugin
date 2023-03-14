@@ -1,8 +1,8 @@
 package solarsystem.coffee;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Server;
-import org.bukkit.World;
+import org.bukkit.*;
+import org.bukkit.block.Block;
+import org.bukkit.block.data.BlockData;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -121,18 +121,27 @@ public class zPBrainPlugin extends JavaPlugin {
             }
             if(input.equals("personality")){
                 if(args.length==0) {
-                    player.sendMessage("There are 5 Personalites available: type '/personality 0-4'");
+                    player.sendMessage("There are 3 Personalites available: type '/personality 0-4'");
                     player.sendMessage("0 = Devon");
                     player.sendMessage("1 = AI-Pal");
                     player.sendMessage("2 = AGI Assistant");
-                    player.sendMessage("3 = Empty");
+                    player.sendMessage("3 = 2Empty");
                     player.sendMessage("4 = Empty");
                 } else {
                     if (args.length > 0) {
-                        if (Integer.valueOf(args[0]) < 5) {
+                        if (Integer.valueOf(args[0]) < 3) {
                             PersoanlityID = Integer.valueOf(args[0]);
                         }
                     }
+                }
+            }
+            if (input.equals("luz")) {
+                Location pos = player.getLocation();
+                Block swap_current_blog = pos.getBlock();
+                if(swap_current_blog.getType().toString()=="AIR"){
+                        BlockData air = null;
+
+                        //world.setBlockData(pos,);
                 }
             }
 
