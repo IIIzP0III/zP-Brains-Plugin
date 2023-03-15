@@ -88,34 +88,47 @@ public class zPBrainPlugin extends JavaPlugin {
                         querry += a + " ";
                     }
 
-                    ////
-                    String Response = solarsystem.coffee.AIInterface.OpenAiChat.Request(querry, tokens, PersoanlityID);
-                    ////
 
+                    //Start async task
 
                     //String Response = solarsystem.coffee.OpenAiChat.Request(querry, "512",PersoanlityID);
+                    int taskID = 0;
 
-                    //Filtering out syntax code from ai response
-                    String[] AIAnswer = Response.split("content=");
-                    Response = AIAnswer[1];
-                    AIAnswer = Response.split("\\), finishReason");
-                    Response = AIAnswer[0];
+                    String finalQuerry = querry;
+                    int finalTaskID = taskID;
+                    taskID = getServer().getScheduler().scheduleAsyncDelayedTask(this, new Runnable() {
+                        @Override
+                        public void run() {
 
-                    Bukkit.broadcastMessage(
-                            C.color("" +
-                                            "&3 //////////////// \n" +
-                                            player.getDisplayName()  +
-                                    " &6==>#AI-" + PersoanlityID + "# " +
-                                            "\n" + querry    +"\n"   +
-                                            "&3////////////////\n"   +
-                                            "&6 " + Response + ""    +
-                                            "\n&3////////////////"
-                            )
+                            ////
+                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(finalQuerry, tokens, PersoanlityID)};
+                            ////
 
-                    );
+                            //Filtering out syntax code from ai response
+                            String[] AIAnswer = Response[0].split("content=");
+                            Response[0] = AIAnswer[1];
+                            AIAnswer = Response[0].split("\\), finishReason");
+                            Response[0] = AIAnswer[0];
+
+                            Bukkit.broadcastMessage(
+                                    C.color("" +
+                                                    "&3 //////////////// \n" +
+                                                    player.getDisplayName()  +
+                                            " &6==>#AI-" + PersoanlityID + "# " +
+                                                    "\n" + finalQuerry +"\n"   +
+                                                    "&3////////////////\n"   +
+                                                    "&6 " + Response[0] + ""    +
+                                                    "\n&3////////////////"
+                                    )
+
+                            );
+                            getServer().getScheduler().cancelTask(finalTaskID);
 
                     //Bukkit.broadcastMessage(C.color("&0 AI: &6" + Response));
 
+                        }
+                    });
+                    //finish async task
                 }
 
             }
