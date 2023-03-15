@@ -46,13 +46,14 @@ public class zPBrainPlugin extends JavaPlugin {
             saveConfig();
         }
 
-
-
-
         tokens = config.getString("tokens");
         API_Key= config.getString("API_Key"); // Needs to ve added at an upgrade
-        Bukkit.getConsoleSender().sendMessage("Configuration read tokens=" + tokens + "API_Key=" + API_Key);
 
+        if(API_Key == "" || API_Key == null){
+            coffee.space.utils.console.echo("Invalid API_Key, please check the config file");
+            getServer().getPluginManager().disablePlugin(getServer().getPluginManager().getPlugin("zPBrains"));
+        }
+        Bukkit.getConsoleSender().sendMessage("Configuration read tokens=" + tokens + "API_Key=" + API_Key);
         Bukkit.getConsoleSender().sendMessage("Version: " + VersionID);
 
 
@@ -101,7 +102,7 @@ public class zPBrainPlugin extends JavaPlugin {
                         public void run() {
 
                             ////
-                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(finalQuerry, tokens, PersoanlityID)};
+                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(finalQuerry, tokens, PersoanlityID,API_Key)};
                             ////
 
                             //Filtering out syntax code from ai response

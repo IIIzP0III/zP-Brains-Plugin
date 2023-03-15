@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
     </list>
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678755792967</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed the lag while requesting a response from the API,&#10;fixed through making the request inside a asynchronus task">
+      <created>1678922789722</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678922789722</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,7 +168,8 @@
     <MESSAGE value="removed unused personalities, and implemented a jailbroken personality" />
     <MESSAGE value="Push" />
     <MESSAGE value="Added Luz command - mv in future into Production artifact" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Luz command - mv in future into Production artifact" />
+    <MESSAGE value="fixed the lag while requesting a response from the API,&#10;fixed through making the request inside a asynchronus task" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the lag while requesting a response from the API,&#10;fixed through making the request inside a asynchronus task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -7,23 +7,20 @@ import com.theokanning.openai.completion.chat.ChatMessage;
 import com.theokanning.openai.service.OpenAiService;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import javax.naming.AuthenticationException;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class OpenAiChat extends JavaPlugin {
-    private final static String API_KEY = "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";
-    //    private final static String MODEL_ID = "text-davinci-003";
-//    private final static String MODEL_ID = "text-davinci-003";
+
     private final static String MODEL_ID = "gpt-3.5-turbo";
 //    private final static String MODEL_ID = "text-davinci-002";
-    public static String Request(String ChatRequest,String CharacterLimit, int PersonalityID) {
+//    private final static String MODEL_ID = "text-davinci-003";
+
+    public static String Request(String ChatRequest,String CharacterLimit, int PersonalityID,String API_KEY) {
 
         OpenAiService service = new OpenAiService(API_KEY);
 
-        //System.out.println(rs.getChoices().toString());
 
 
         File file = new File("plugins/zP-Plugins/ai-personalities/0");
