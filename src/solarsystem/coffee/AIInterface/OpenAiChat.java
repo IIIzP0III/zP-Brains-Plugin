@@ -22,7 +22,6 @@ public class OpenAiChat extends JavaPlugin {
         OpenAiService service = new OpenAiService(API_KEY);
 
 
-
         File file = new File("plugins/zP-Plugins/ai-personalities/0");
 
 

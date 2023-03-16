@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678922789722</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Load API Key from config file">
+      <created>1678923624955</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678923624955</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,7 +175,8 @@
     <MESSAGE value="Push" />
     <MESSAGE value="Added Luz command - mv in future into Production artifact" />
     <MESSAGE value="fixed the lag while requesting a response from the API,&#10;fixed through making the request inside a asynchronus task" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the lag while requesting a response from the API,&#10;fixed through making the request inside a asynchronus task" />
+    <MESSAGE value="Load API Key from config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Load API Key from config file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
