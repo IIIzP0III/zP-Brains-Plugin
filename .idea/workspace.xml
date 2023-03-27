@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
     </list>
@@ -170,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678925034079</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Made the AI remember previous conversations,&#10;also distinguish between different users,&#10;Have to check for usage of tokens, as the prompts can get quite big with the memory methode">
+      <created>1679890205156</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679890205156</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -186,7 +194,8 @@
     <MESSAGE value="fixed the lag while requesting a response from the API,&#10;fixed through making the request inside a asynchronus task" />
     <MESSAGE value="Load API Key from config file" />
     <MESSAGE value="minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor fixes" />
+    <MESSAGE value="Made the AI remember previous conversations,&#10;also distinguish between different users,&#10;Have to check for usage of tokens, as the prompts can get quite big with the memory methode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the AI remember previous conversations,&#10;also distinguish between different users,&#10;Have to check for usage of tokens, as the prompts can get quite big with the memory methode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

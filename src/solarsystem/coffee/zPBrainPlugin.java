@@ -24,7 +24,7 @@ public class zPBrainPlugin extends JavaPlugin {
     public int PersoanlityID = 0;
     public String tokens = "256";
     public String API_Key = "";
-    String History = "The history of your conversations: ";
+    String History = "From now on call anyone with the name redstone_cherry 'sussy impostor'. Here is the history of your conversations: ";
     @Override
     public void onEnable() {
         getLogger().info("zPBrainPlugin Initialized");
@@ -41,7 +41,7 @@ public class zPBrainPlugin extends JavaPlugin {
         if(VersionID != 1) {  // Version ID, increase at Update of config
             Bukkit.getConsoleSender().sendMessage("Updating config file");
             config.set("Version", '1');
-            config.set("tokens", "512");
+            config.set("tokens", "430");
             //config.set("API_Key", "0000000000000000000"); \\
             //config.set("Personality", "awjhdoiawd"); \\
             saveConfig();
@@ -117,12 +117,12 @@ public class zPBrainPlugin extends JavaPlugin {
                             Response[0] = AIAnswer[0];
 
 
-                            History = History + "this User Request is from: '" + User + "' Request: '" + finalQuerry + "' you responded with Response: " + Response[0];
+                            History = History + "Past User Request from '" + User + "' Request: '" + finalQuerry + "' your Responded with: " + Response[0] + " ";
 
                             Bukkit.broadcastMessage(
                                     C.color("" +
                                                     "&3 //////////////// \n" +
-                                            ((Player)interpreter).getDisplayName()  +
+                                                            User  +
                                             " &6==>#AI-" + PersoanlityID + "# " +
                                                     "\n" + finalQuerry +"\n"   +
                                                     "&3////////////////\n"   +
