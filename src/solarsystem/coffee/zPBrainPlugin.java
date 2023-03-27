@@ -24,6 +24,7 @@ public class zPBrainPlugin extends JavaPlugin {
     public int PersoanlityID = 0;
     public String tokens = "256";
     public String API_Key = "";
+    String History = "The history of your conversations: ";
     @Override
     public void onEnable() {
         getLogger().info("zPBrainPlugin Initialized");
@@ -85,12 +86,13 @@ public class zPBrainPlugin extends JavaPlugin {
 
             if(input.equals("airequest")){
                 String querry = "";
+                String User = interpreter.getName();
                 if(args.length>0){
                     for(String a : args){
                         querry += a + " ";
                     }
 
-
+                    //todo make AI remember past chat history - maybe for user && make AI respond in private mode too
                     //Start async task
 
                     //String Response = solarsystem.coffee.OpenAiChat.Request(querry, "512",PersoanlityID);
@@ -103,7 +105,9 @@ public class zPBrainPlugin extends JavaPlugin {
                         public void run() {
 
                             ////
-                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(finalQuerry, tokens, PersoanlityID,API_Key)};
+                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(API_Key, finalQuerry, History, User, PersoanlityID,  tokens)};
+
+
                             ////
 
                             //Filtering out syntax code from ai response
@@ -112,10 +116,13 @@ public class zPBrainPlugin extends JavaPlugin {
                             AIAnswer = Response[0].split("\\), finishReason");
                             Response[0] = AIAnswer[0];
 
+
+                            History = History + "this User Request is from: '" + User + "' Request: '" + finalQuerry + "' you responded with Response: " + Response[0];
+
                             Bukkit.broadcastMessage(
                                     C.color("" +
                                                     "&3 //////////////// \n" +
-                                                    player.getDisplayName()  +
+                                            ((Player)interpreter).getDisplayName()  +
                                             " &6==>#AI-" + PersoanlityID + "# " +
                                                     "\n" + finalQuerry +"\n"   +
                                                     "&3////////////////\n"   +
@@ -140,11 +147,11 @@ public class zPBrainPlugin extends JavaPlugin {
                     player.sendMessage("0 = Devon");
                     player.sendMessage("1 = AI-Pal");
                     player.sendMessage("2 = AGI Assistant");
-                    player.sendMessage("3 = 2Empty");
-                    player.sendMessage("4 = Empty");
+                    player.sendMessage("3 = GPT-3");
+                    player.sendMessage("4 = GPT-3");
                 } else {
                     if (args.length > 0) {
-                        if (Integer.valueOf(args[0]) < 3) {
+                        if (Integer.valueOf(args[0]) < 5) {
                             PersoanlityID = Integer.valueOf(args[0]);
                         }
                     }

@@ -17,7 +17,7 @@ public class OpenAiChat extends JavaPlugin {
 //    private final static String MODEL_ID = "text-davinci-002";
 //    private final static String MODEL_ID = "text-davinci-003";
 
-    public static String Request(String ChatRequest,String CharacterLimit, int PersonalityID,String API_KEY) {
+    public static String Request(String API_KEY, String ChatRequest, String History, String User, int PersonalityID, String CharacterLimit) {
 
         OpenAiService service = new OpenAiService(API_KEY);
 
@@ -26,7 +26,7 @@ public class OpenAiChat extends JavaPlugin {
 
 
 
-
+        //todo add config files for personalities you can modify, -
         List<ChatMessage> list = new ArrayList<>();
         ChatMessage cHatMessage = new ChatMessage();
         String[] PersonalityContainer = new String[5];
@@ -45,7 +45,7 @@ public class OpenAiChat extends JavaPlugin {
 
 
         cHatMessage.setRole("user");
-        cHatMessage.setContent("Respond in less then" + CharacterLimit + " characters. + " + PersonalityContainer[PersonalityID] + ChatRequest);
+        cHatMessage.setContent("Respond in less then" + CharacterLimit + " characters. + " + PersonalityContainer[PersonalityID] + History +  "End of previous conversation history." +"Current User Request from " + User + "Current Request: " + ChatRequest);
         //        cHatMessage.setContent(PersonalityContainer[PersonalityID] + ChatRequest);
         list.add(cHatMessage);
 
