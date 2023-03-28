@@ -1,21 +1,12 @@
 package solarsystem.coffee;
 
 import org.bukkit.*;
-import org.bukkit.block.Block;
-import org.bukkit.block.data.BlockData;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import solarsystem.coffee.utils.C;
-import solarsystem.coffee.utils.configIO;
-
-import java.io.File;
-
-import static org.bukkit.Bukkit.getLogger;
-
-import static org.bukkit.Bukkit.*;
 
 public class zPBrainPlugin extends JavaPlugin {
 
@@ -74,7 +65,7 @@ public class zPBrainPlugin extends JavaPlugin {
         player = (Player) interpreter;
         Server server = interpreter.getServer();
         String serverName = server.getName();
-        World world = server.getWorld("world");
+        //World world = server.getWorld("world");
 
         if (!input.equalsIgnoreCase(input)){
 
@@ -95,11 +86,10 @@ public class zPBrainPlugin extends JavaPlugin {
                     //todo make AI remember past chat history - maybe for user && make AI respond in private mode too
                     //Start async task
 
-                    //String Response = solarsystem.coffee.OpenAiChat.Request(querry, "512",PersoanlityID);
                     int taskID = 0;
 
                     String finalQuerry = querry;
-                    int finalTaskID = taskID;
+                    //int finalTaskID = taskID;
                     taskID = getServer().getScheduler().scheduleAsyncDelayedTask(this, new Runnable() {
                         @Override
                         public void run() {
@@ -131,9 +121,8 @@ public class zPBrainPlugin extends JavaPlugin {
                                     )
 
                             );
-                            getServer().getScheduler().cancelTask(finalTaskID);
+                            //getServer().getScheduler().cancelTask(finalTaskID);
 
-                    //Bukkit.broadcastMessage(C.color("&0 AI: &6" + Response));
 
                         }
                     });
@@ -155,16 +144,6 @@ public class zPBrainPlugin extends JavaPlugin {
                             PersoanlityID = Integer.valueOf(args[0]);
                         }
                     }
-                }
-            }
-            if (input.equals("luz")) {
-                Location pos = player.getLocation();
-                Block swap_current_blog = pos.getBlock();
-                //if(swap_current_blog.getType().toString()=="AIR"){
-                if(swap_current_blog.getType().isAir()){
-                        //Block.isAir()
-                        swap_current_blog.setType(Material.LIGHT);
-                        //world.setBlockData(pos,);
                 }
             }
 
