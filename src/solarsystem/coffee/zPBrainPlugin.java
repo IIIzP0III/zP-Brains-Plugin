@@ -15,7 +15,7 @@ public class zPBrainPlugin extends JavaPlugin {
     public int PersoanlityID = 0;
     public String tokens = "256";
     public String API_Key = "";
-    String History = "From now on call anyone with the name redstone_cherry 'sussy impostor'. Here is the history of your conversations: ";
+    String History = "Here is the history of your previous conversations: ";
     @Override
     public void onEnable() {
         getLogger().info("zPBrainPlugin Initialized");

@@ -1,6 +1,7 @@
 package solarsystem.coffee;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import solarsystem.coffee.dev.openaicomplete;
 
 import javax.naming.AuthenticationException;
 
