@@ -9,14 +9,14 @@ import javax.naming.AuthenticationException;
 import java.util.Scanner;
 
 public class openaicomplete {
-    private final static String API_KEY = "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";
+ //   private final static String API_KEY = "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";
     private final static String MODEL_ID = "text-davinci-003";
 //    private final static String MODEL_ID = "text-davinci-003";
 //    private final static String MODEL_ID = "gpt-3.5-turbo";
 
     public static void main(String[] args) throws AuthenticationException {
 
-        OpenAiService service = new OpenAiService(API_KEY);
+        OpenAiService service = new OpenAiService("API_KEY");
 
         //System.out.println(rs.getChoices().toString());
 

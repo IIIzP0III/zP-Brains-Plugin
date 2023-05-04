@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_plugin_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/dev/openaicomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/dev/openaicomplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zP Brain-plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zP Brain-plugin.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,22 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path": "/home/level2/programming/zP Brain-plugin/librarys",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/level2/programming/AI Pal",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.16642338",
-    "project.structure.side.proportion": "0.08764243"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path&quot;: &quot;/home/level2/programming/zP Brain-plugin/librarys&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/level2/programming/zP Homes&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16642338&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.08764243&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681618355914</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="advance patch">
+      <created>1683077952222</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683077952222</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,7 +219,8 @@
     <MESSAGE value="small improvments" />
     <MESSAGE value="minor improvments - cleared codebase" />
     <MESSAGE value="Restructuring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructuring" />
+    <MESSAGE value="advance patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="advance patch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
