@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class openaichat {
-    private final static String API_KEY = "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";
+    private final static String API_KEY = "";
 //    private final static String MODEL_ID = "text-davinci-003";
 //    private final static String MODEL_ID = "text-davinci-003";
     private final static String MODEL_ID = "gpt-3.5-turbo";

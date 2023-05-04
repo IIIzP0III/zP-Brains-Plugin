@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/zP_Brain_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/dev/openaicomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/dev/openaicomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/dev/openaichat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/dev/openaichat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683077952222</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="patch">
+      <created>1683238070418</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683238070418</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,7 +228,8 @@
     <MESSAGE value="minor improvments - cleared codebase" />
     <MESSAGE value="Restructuring" />
     <MESSAGE value="advance patch" />
-    <option name="LAST_COMMIT_MESSAGE" value="advance patch" />
+    <MESSAGE value="patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="patch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

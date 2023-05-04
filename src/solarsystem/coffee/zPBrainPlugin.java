@@ -18,7 +18,7 @@ public class zPBrainPlugin extends JavaPlugin {
     String History = "Here is the history of your previous conversations: ";
     @Override
     public void onEnable() {
-        getLogger().info("zPBrainPlugin Initialized");
+        getLogger().info("zP-Brains Plugin Initialized");
         configloader();
 
     }
@@ -29,11 +29,11 @@ public class zPBrainPlugin extends JavaPlugin {
 
         int VersionID = 0;
         VersionID = Integer.valueOf(config.getString("Version"));
-        if(VersionID != 1) {  // Version ID, increase at Update of config
+        if(VersionID >= 1) {  // Version ID, increase at Update of config
             Bukkit.getConsoleSender().sendMessage("Updating config file");
             config.set("Version", '1');
             config.set("tokens", "430");
-            //config.set("API_Key", "0000000000000000000"); \\
+            config.set("API_Key", "0000000000000000000");
             //config.set("Personality", "awjhdoiawd"); \\
             saveConfig();
         }
@@ -41,9 +41,9 @@ public class zPBrainPlugin extends JavaPlugin {
         tokens = config.getString("tokens");
         API_Key= config.getString("API_Key"); // Needs to ve added at an upgrade
 
-        if(API_Key == "" || API_Key == null){
+        if(API_Key == "" || API_Key == null || API_Key == "0000000000000000000") {
             getServer().getConsoleSender().sendMessage("Invalid API_Key, please check the config file");
-            getServer().getPluginManager().disablePlugin(getServer().getPluginManager().getPlugin("zPBrains"));
+            getServer().getPluginManager().disablePlugin(getServer().getPluginManager().getPlugin("zP-Brains"));
         }
 
         Bukkit.getConsoleSender().sendMessage("Configuration read tokens=" + tokens + "API_Key=" + API_Key);
@@ -55,7 +55,7 @@ public class zPBrainPlugin extends JavaPlugin {
     @Override
     public void onDisable() {
 
-        getLogger().info("zPBrainPlugin deactivated");
+        getLogger().info("zP-Brains Plugin deactivated");
     }
 
 
