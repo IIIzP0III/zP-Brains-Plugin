@@ -1,4 +1,4 @@
-package solarsystem.coffee.utils;
+package solarsystem.coffee.dev;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -11,7 +11,7 @@ public class configIO extends JavaPlugin{
 
 
         File file;
-        File configdata = new File("plugins/zPBrainsPlugin/config.yml");
+        File configdata = new File("plugins/zP-Brains/config.yml");
 
         config.set("tokens", "256");
         //saveDefaultConfig();
@@ -19,8 +19,6 @@ public class configIO extends JavaPlugin{
         Bukkit.getConsoleSender().sendMessage("Configuration File created, setup your Mysql/Mariadb details there");
 
         //this.getPluginLoader().disablePlugin(Bukkit.getPluginManager().getPlugin("ZorgHomes"));
-
-
 
     }
 }

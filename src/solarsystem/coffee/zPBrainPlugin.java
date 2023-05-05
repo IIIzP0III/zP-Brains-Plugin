@@ -36,6 +36,7 @@ public class zPBrainPlugin extends JavaPlugin {
             config.set("API_Key", "0000000000000000000");
             //config.set("Personality", "awjhdoiawd"); \\
             saveConfig();
+            Bukkit.getConsoleSender().sendMessage("Configuration File created, setup your Mysql/Mariadb details there");
         }
 
         tokens = config.getString("tokens");
@@ -57,6 +58,7 @@ public class zPBrainPlugin extends JavaPlugin {
 
         getLogger().info("zP-Brains Plugin deactivated");
     }
+
 
 
     @Override
@@ -95,7 +97,7 @@ public class zPBrainPlugin extends JavaPlugin {
                         public void run() {
 
                             ////
-                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(API_Key, finalQuerry, History, User, PersoanlityID,  tokens)};
+                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(API_Key, finalQuerry, History, User, PersoanlityID,  tokens, getServer())};
 
 
                             ////
@@ -107,7 +109,7 @@ public class zPBrainPlugin extends JavaPlugin {
                             Response[0] = AIAnswer[0];
 
 
-                            History = History + "Past User Request from '" + User + "' Request: '" + finalQuerry + "' your Responded with: " + Response[0] + " ";
+                            History = History + "Past User Request from '" + User + "' Request: '" + finalQuerry + "' you Responded with: " + Response[0] + " ";
 
                             Bukkit.broadcastMessage(
                                     C.color("" +

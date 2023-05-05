@@ -5,6 +5,7 @@ import com.theokanning.openai.completion.chat.ChatCompletionRequest;
 import com.theokanning.openai.completion.chat.ChatCompletionResult;
 import com.theokanning.openai.completion.chat.ChatMessage;
 import com.theokanning.openai.service.OpenAiService;
+import org.bukkit.Server;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -17,7 +18,7 @@ public class OpenAiChat extends JavaPlugin {
 //    private final static String MODEL_ID = "text-davinci-002";
 //    private final static String MODEL_ID = "text-davinci-003";
 
-    public static String Request(String API_KEY, String ChatRequest, String History, String User, int PersonalityID, String CharacterLimit) {
+    public static String Request(String API_KEY, String ChatRequest, String History, String User, int PersonalityID, String CharacterLimit, Server server) {
 
         OpenAiService service = new OpenAiService(API_KEY);
 
@@ -52,21 +53,24 @@ public class OpenAiChat extends JavaPlugin {
         /*
         cHatMessage.setRole("system");
         cHatMessage.setContent("Respond in less then" + CharacterLimit + " characters. + " + PersonalityContainer[PersonalityID]);
- //        cHatMessage.setContent(PersonalityContainer[PersonalityID] + ChatRequest);
-        list.add(cHatMessage);
-
-
-        cHatMessage.setRole("user");
-        cHatMessage.setContent(ChatRequest);
+        cHatMessage.setContent(PersonalityContainer[PersonalityID] + ChatRequest);
         list.add(cHatMessage);
         */
+
+
+        int tookensused = tookenizer(server, list.toString()); //calculate tookens
+        if(tookensused>=3000){ //todo calculate if over tooken limit and dump/reset/load memory of AI to prevent memory reset through to huge message through history
+            //saveMemory();
+            //clearHistory();
+            //loadMemory();
+        }
 
         //chat format
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest.builder()
                 .messages(list)
                 .model(MODEL_ID)
                 .temperature(0.7)
-                .maxTokens(100)
+                .maxTokens(200)
                 .n(1)
                 .build();
 
@@ -75,5 +79,30 @@ public class OpenAiChat extends JavaPlugin {
 
         return Output;
 
+    }
+
+
+    public static int tookenizer(Server server, String prompt){
+
+        int tokens_user = 0;
+
+        char[] promptc = prompt.toCharArray();
+        String[] promptw = prompt.split(" ");
+
+        int tokens_c = 0;
+        for(char o : promptc){
+            tokens_c++;
+        }
+        int tokens_w = 0;
+        for(String O : promptw){
+            tokens_w++;
+        }
+        if(tokens_c>=tokens_w){
+            server.getConsoleSender().sendMessage("tokens_c =" + Integer.toString(tokens_c));
+            return tokens_c;
+        } else {
+            server.getConsoleSender().sendMessage("tokens_w =" + Integer.toString(tokens_w));
+            return tokens_w;
+        }
     }
 }
