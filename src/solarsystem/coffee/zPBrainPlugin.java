@@ -27,13 +27,13 @@ public class zPBrainPlugin extends JavaPlugin {
 
         FileConfiguration config = this.getConfig();
 
-        int VersionID = 0;
-        VersionID = Integer.valueOf(config.getString("Version"));
-        if(VersionID != 1) {  // Version ID, increase at Update of config
+        String VersionID = "1";
+        VersionID = config.getString("Version");
+        if(Integer.valueOf(VersionID) < 3) {  // Version ID, increase at Update of config
             Bukkit.getConsoleSender().sendMessage("Updating config file");
-            config.set("Version", '1');
+            config.set("Version", '3');
             config.set("tokens", "430");
-            //config.set("API_Key", "0000000000000000000"); \\
+            config.set("API_Key", "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");
             //config.set("Personality", "awjhdoiawd"); \\
             saveConfig();
         }

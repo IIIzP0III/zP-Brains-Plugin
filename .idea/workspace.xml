@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="minor improvments - cleared codebase">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zP Brain-plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zP Brain-plugin.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -41,6 +45,9 @@
         <option name="url" value="https://github.com/IIIzP0III/zP-Brains-Plugin" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="ihw3ui5v" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,8 +73,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "failed",
     "last_opened_file_path": "/home/level2/programming/AI Pal",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.23025335",
     "project.structure.side.proportion": "0.26951522"
   }
@@ -186,6 +194,17 @@
     </task>
     <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inital Push for AI Plugin for papermc" />

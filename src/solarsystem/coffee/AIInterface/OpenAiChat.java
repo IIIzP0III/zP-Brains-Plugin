@@ -13,8 +13,9 @@ import java.util.List;
 
 public class OpenAiChat extends JavaPlugin {
 
-    private final static String MODEL_ID = "gpt-3.5-turbo";
+//    private final static String MODEL_ID = "gpt-3.5-turbo";
 //    private final static String MODEL_ID = "text-davinci-002";
+    private final static String MODEL_ID = "gpt-4";
 //    private final static String MODEL_ID = "text-davinci-003";
 
     public static String Request(String API_KEY, String ChatRequest, String History, String User, int PersonalityID, String CharacterLimit) {
