@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="minor improvments - cleared codebase">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zP Brain-plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zP Brain-plugin.iml" afterDir="false" />
-    </list>
+    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +23,14 @@
         <option value="zP" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="50d448661a0886ad4d7d60ebfd7fc1657330c74c" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -73,7 +72,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "failed",
+    "git-widget-placeholder": "50d44866",
     "last_opened_file_path": "/home/level2/programming/AI Pal",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.23025335",
@@ -192,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1679891822968</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Revert &quot;we are getting there&quot;&#10;&#10;This reverts commit d669fcea">
+      <option name="closed" value="true" />
+      <created>1689114821041</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1689114821041</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,13 +207,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="failed" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Inital Push for AI Plugin for papermc" />
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console" />
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console&#10;&#10;Successful cli program for openai Chat" />
@@ -222,7 +242,8 @@
     <MESSAGE value="Made the AI remember previous conversations,&#10;also distinguish between different users,&#10;Have to check for usage of tokens, as the prompts can get quite big with the memory methode" />
     <MESSAGE value="small improvments" />
     <MESSAGE value="minor improvments - cleared codebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor improvments - cleared codebase" />
+    <MESSAGE value="Revert &quot;we are getting there&quot;&#10;&#10;This reverts commit d669fcea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;we are getting there&quot;&#10;&#10;This reverts commit d669fcea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
