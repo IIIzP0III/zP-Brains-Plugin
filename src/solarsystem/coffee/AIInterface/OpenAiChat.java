@@ -47,27 +47,14 @@ public class OpenAiChat extends JavaPlugin {
 
         cHatMessage.setRole("user");
         cHatMessage.setContent("Respond in less then" + CharacterLimit + " characters. + " + PersonalityContainer[PersonalityID] + "'" +History +  "' End of previous conversation history. " +"Current User: '" + User + "' Current Request: '" + ChatRequest + "'");
-        //        cHatMessage.setContent(PersonalityContainer[PersonalityID] + ChatRequest);
         list.add(cHatMessage);
-
-        /*
-        cHatMessage.setRole("system");
-        cHatMessage.setContent("Respond in less then" + CharacterLimit + " characters. + " + PersonalityContainer[PersonalityID]);
- //        cHatMessage.setContent(PersonalityContainer[PersonalityID] + ChatRequest);
-        list.add(cHatMessage);
-
-
-        cHatMessage.setRole("user");
-        cHatMessage.setContent(ChatRequest);
-        list.add(cHatMessage);
-        */
 
         //chat format
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest.builder()
                 .messages(list)
                 .model(MODEL_ID)
                 .temperature(0.7)
-                .maxTokens(100)
+                .maxTokens(4000)
                 .n(1)
                 .build();
 

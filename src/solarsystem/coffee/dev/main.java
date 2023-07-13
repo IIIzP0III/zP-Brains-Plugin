@@ -1,4 +1,4 @@
-package solarsystem.coffee;
+package solarsystem.coffee.dev;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="" />
+    <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/dev/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openaichat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/dev/openaichat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/openaicomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/dev/openaicomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +72,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path": "/home/level2/programming/zP Brain-plugin/librarys",
     "Downloaded.Files.Path.Enabled": "true",
     "Repository.Attach.Annotations": "false",
@@ -72,7 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "50d44866",
+    "git-widget-placeholder": "master-dev",
     "last_opened_file_path": "/home/level2/programming/AI Pal",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.23025335",
@@ -199,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689114821041</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="push gpt4">
+      <option name="closed" value="true" />
+      <created>1689114961680</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1689114961680</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,7 +230,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="failed" />
+                        <option value="master-dev" />
                       </list>
                     </value>
                   </entry>
@@ -243,7 +260,8 @@
     <MESSAGE value="small improvments" />
     <MESSAGE value="minor improvments - cleared codebase" />
     <MESSAGE value="Revert &quot;we are getting there&quot;&#10;&#10;This reverts commit d669fcea" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;we are getting there&quot;&#10;&#10;This reverts commit d669fcea" />
+    <MESSAGE value="push gpt4" />
+    <option name="LAST_COMMIT_MESSAGE" value="push gpt4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
