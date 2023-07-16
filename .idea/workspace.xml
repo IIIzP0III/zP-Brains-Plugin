@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/dev/todo" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/dev/todo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689548968626</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1689549610179</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1689549610179</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,9 +323,9 @@
     <MESSAGE value="push gpt4 adaption" />
     <MESSAGE value="ps 1.04&#10;added tokenizer" />
     <MESSAGE value="ps 1.04" />
-    <MESSAGE value="README.md" />
     <MESSAGE value="upgrades" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrades" />
+    <MESSAGE value="README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
