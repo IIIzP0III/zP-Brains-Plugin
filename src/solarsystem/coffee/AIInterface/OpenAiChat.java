@@ -14,7 +14,7 @@ import java.util.List;
 
 public class OpenAiChat extends JavaPlugin {
 
-//    private final static String MODEL_ID = "gpt-3.5-turbo";
+    //    private final static String MODEL_ID = "gpt-3.5-turbo";
 //    private final static String MODEL_ID = "text-davinci-002";
     private final static String MODEL_ID = "gpt-4";
 //    private final static String MODEL_ID = "text-davinci-003";
@@ -25,7 +25,6 @@ public class OpenAiChat extends JavaPlugin {
 
 
         File file = new File("plugins/zP-Plugins/ai-personalities/0");
-
 
 
         //todo add config files for personalities you can modify, -
@@ -40,17 +39,17 @@ public class OpenAiChat extends JavaPlugin {
 
 
         cHatMessage.setRole("user");
-        cHatMessage.setContent("Respond in less then" + CharacterLimit + " characters. + " + PersonalityContainer[PersonalityID] + "'" +History +  "' End of previous conversation history. " +"Current User: '" + User + "' Current Request: '" + ChatRequest + "'");
+        cHatMessage.setContent("Respond in less then" + CharacterLimit + " characters. + " + PersonalityContainer[PersonalityID] + "'" + History + "' End of previous conversation history. " + "Current User: '" + User + "' Current Request: '" + ChatRequest + "'");
         list.add(cHatMessage);
 
-
+/*
         int tookensused = tookenizer(server, list.toString()); //calculate tookens
         if(tookensused>=3000){ //todo calculate if over tooken limit and dump/reset/load memory of AI to prevent memory reset through to huge message through history
             //saveMemory();
             //clearHistory();
             //loadMemory();
         }
-
+*/
         //chat format
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest.builder()
                 .messages(list)
@@ -66,12 +65,19 @@ public class OpenAiChat extends JavaPlugin {
         return Output;
 
     }
+}
 
 
+
+
+/*
     public static int tookenizer(Server server, String prompt){
 
         int tokens_user = 0;
 
+
+        //depreciated
+        /*
         char[] promptc = prompt.toCharArray();
         String[] promptw = prompt.split(" ");
 
@@ -90,5 +96,5 @@ public class OpenAiChat extends JavaPlugin {
             server.getConsoleSender().sendMessage("tokens_w =" + Integer.toString(tokens_w));
             return tokens_w;
         }
-    }
-}
+
+         */
