@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daf0158-4265-412a-bf2d-ae09dad15ee2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/solarsystem/coffee/dev/todo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/AIInterface/OpenAiChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solarsystem/coffee/zPBrainPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zP Brain-plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zP Brain-plugin.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +219,23 @@
       <option name="project" value="LOCAL" />
       <updated>1689215660787</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ps 1.04&#10;added tokenizer">
+      <option name="closed" value="true" />
+      <created>1689546629119</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1689546629119</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ps 1.04">
+      <option name="closed" value="true" />
+      <created>1689546982181</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1689546982181</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +249,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="zP-Brains-Plugin/master" />
+                        <option value="zP-Brains-Plugin/master-dev" />
                       </list>
                     </value>
                   </entry>
@@ -250,6 +262,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Inital Push for AI Plugin for papermc" />
     <MESSAGE value="Inital Push for AI Plugin for papermc&#10;Added missing librarys and successful API Request made in console" />
@@ -269,7 +282,9 @@
     <MESSAGE value="Revert &quot;we are getting there&quot;&#10;&#10;This reverts commit d669fcea" />
     <MESSAGE value="push gpt4" />
     <MESSAGE value="push gpt4 adaption" />
-    <option name="LAST_COMMIT_MESSAGE" value="push gpt4 adaption" />
+    <MESSAGE value="ps 1.04&#10;added tokenizer" />
+    <MESSAGE value="ps 1.04" />
+    <option name="LAST_COMMIT_MESSAGE" value="ps 1.04" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,6 +8,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import solarsystem.coffee.utils.C;
 
+import java.util.Objects;
+
 public class zPBrainPlugin extends JavaPlugin {
 
 
@@ -27,8 +29,9 @@ public class zPBrainPlugin extends JavaPlugin {
 
         FileConfiguration config = this.getConfig();
 
-        String VersionID = "1";
+        String VersionID;
         VersionID = config.getString("Version");
+        assert VersionID != null;
         if(Integer.parseInt(VersionID) < 3) {  // Version ID, increase at Update of config
             Bukkit.getConsoleSender().sendMessage("Updating config file");
             config.set("Version", '4');
@@ -41,9 +44,9 @@ public class zPBrainPlugin extends JavaPlugin {
         tokens = config.getString("tokens");
         API_Key= config.getString("API_Key"); // Needs to ve added at an upgrade
 
-        if(API_Key == "" || API_Key == null || API_Key == "0000000000000000000") {
+        if(Objects.equals(API_Key, "") || API_Key == null || API_Key.equals("0000000000000000000")) {
             getServer().getConsoleSender().sendMessage("Invalid API_Key, please check the config file");
-            getServer().getPluginManager().disablePlugin(getServer().getPluginManager().getPlugin("zPBrains"));
+            getServer().getPluginManager().disablePlugin(Objects.requireNonNull(getServer().getPluginManager().getPlugin("zPBrains")));
         }
 
         Bukkit.getConsoleSender().sendMessage("Configuration read tokens=" + tokens + "API_Key=" + API_Key);
@@ -73,74 +76,69 @@ public class zPBrainPlugin extends JavaPlugin {
 
         }
 
-        if (interpreter instanceof Player) {
-
-            if(input.equals("airequest")){
-                String querry = "";
-                String User = interpreter.getName();
-                if(args.length>0){
-                    for(String a : args){
-                        querry += a + " ";
-                    }
-
-                    //
-                    //Start async task
-
-                    int taskID = 0;
-
-                    String finalQuerry = querry;
-                    //int finalTaskID = taskID;
-                    taskID = getServer().getScheduler().scheduleAsyncDelayedTask(this, new Runnable() {
-                        @Override
-                        public void run() {
-
-                            ////
-                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(API_Key, finalQuerry, History, User, PersoanlityID,  tokens, server)};
-
-
-                            ////
-
-                            //Filtering out syntax code from ai response
-                            String[] AIAnswer = Response[0].split("content=");
-                            Response[0] = AIAnswer[1];
-                            AIAnswer = Response[0].split("\\), finishReason");
-                            Response[0] = AIAnswer[0];
-
-
-                            History = History + "Past User Request from '" + User + "' Request: '" + finalQuerry + "' your Responded with: " + Response[0] + " ";
-
-                            Bukkit.broadcastMessage(
-                                    C.color("" +
-                                                    "&3 //////////////// \n" +
-                                                            User  +
-                                            " &6==>#AI-" + PersoanlityID + "# " +
-                                                    "\n" + finalQuerry +"\n"   +
-                                                    "&3////////////////\n"   +
-                                                    "&6 " + Response[0] + ""    +
-                                                    "\n&3////////////////"
-                                    )
-
-                            );
-                            //getServer().getScheduler().cancelTask(finalTaskID);
-
-
-                        }
-                    });
-                    //finish async task
+        if (input.equals("airequest")) {
+            String querry = "";
+            String User = interpreter.getName();
+            if (args.length > 0) {
+                for (String a : args) {
+                    querry += a + " ";
                 }
 
-            }
-            if(input.equals("personality")){
-                if(args.length==0) {
-                    player.sendMessage("There are 5 Personalites available: type '/personality 0-4'");
-                } else {
-                    if (Integer.parseInt(args[0]) < 5) {
-                        PersoanlityID = Integer.parseInt(args[0]);
+                //
+                //Start async task
+
+                int taskID = 0;
+
+                String finalQuerry = querry;
+                //int finalTaskID = taskID
+                taskID = getServer().getScheduler().scheduleAsyncDelayedTask(this, new Runnable() {
+                    @Override
+                    public void run() {
+
+                        ////
+                        final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(API_Key, finalQuerry, History, User, PersoanlityID, tokens, server)};
+
+                        ////
+
+                        //Filtering out syntax code from ai response
+                        String[] AIAnswer = Response[0].split("content=");
+                        Response[0] = AIAnswer[1];
+                        AIAnswer = Response[0].split("\\), finishReason");
+                        Response[0] = AIAnswer[0];
+
+
+                        History = History + "Past User Request from '" + User + "' Request: '" + finalQuerry + "' your Responded with: " + Response[0] + " ";
+
+                        Bukkit.broadcastMessage(
+                                C.color("&3 //////////////// \n" +
+                                        User +
+                                        " &6==>#AI-" + PersoanlityID + "# " +
+                                        "\n" + finalQuerry + "\n" +
+                                        "&3////////////////\n" +
+                                        "&6 " + Response[0] +
+                                        "\n&3////////////////"
+                                )
+
+                        );
+                        //getServer().getScheduler().cancelTask(finalTaskID);
+
+
                     }
-                }
+                });
+                //finish async task
             }
 
         }
+        if(input.equals("personality")){
+            if(args.length==0) {
+                player.sendMessage("There are 5 Personalities available: type '/personality 0-4'");
+            } else {
+                if (Integer.parseInt(args[0]) < 5) {
+                    PersoanlityID = Integer.parseInt(args[0]);
+                }
+            }
+        }
+
         return true;
     }
 }
