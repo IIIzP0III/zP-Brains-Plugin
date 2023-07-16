@@ -29,11 +29,11 @@ public class zPBrainPlugin extends JavaPlugin {
 
         String VersionID = "1";
         VersionID = config.getString("Version");
-        if(Integer.valueOf(VersionID) < 3) {  // Version ID, increase at Update of config
+        if(Integer.parseInt(VersionID) < 3) {  // Version ID, increase at Update of config
             Bukkit.getConsoleSender().sendMessage("Updating config file");
-            config.set("Version", '3');
+            config.set("Version", '4');
             config.set("tokens", "430");
-            config.set("API_Key", "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");
+            config.set("API_Key", "0000000000000000000");
             //config.set("Personality", "awjhdoiawd"); \\
             saveConfig();
         }
@@ -41,7 +41,7 @@ public class zPBrainPlugin extends JavaPlugin {
         tokens = config.getString("tokens");
         API_Key= config.getString("API_Key"); // Needs to ve added at an upgrade
 
-        if(API_Key == "" || API_Key == null){
+        if(API_Key == "" || API_Key == null || API_Key == "0000000000000000000") {
             getServer().getConsoleSender().sendMessage("Invalid API_Key, please check the config file");
             getServer().getPluginManager().disablePlugin(getServer().getPluginManager().getPlugin("zPBrains"));
         }
@@ -55,7 +55,7 @@ public class zPBrainPlugin extends JavaPlugin {
     @Override
     public void onDisable() {
 
-        getLogger().info("zPBrainPlugin deactivated");
+        getLogger().info("zP-Brains Plugin deactivated");
     }
 
 
@@ -83,7 +83,7 @@ public class zPBrainPlugin extends JavaPlugin {
                         querry += a + " ";
                     }
 
-                    //todo make AI remember past chat history - maybe for user && make AI respond in private mode too
+                    //
                     //Start async task
 
                     int taskID = 0;
@@ -95,7 +95,7 @@ public class zPBrainPlugin extends JavaPlugin {
                         public void run() {
 
                             ////
-                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(API_Key, finalQuerry, History, User, PersoanlityID,  tokens)};
+                            final String[] Response = {solarsystem.coffee.AIInterface.OpenAiChat.Request(API_Key, finalQuerry, History, User, PersoanlityID,  tokens, server)};
 
 
                             ////
@@ -132,17 +132,10 @@ public class zPBrainPlugin extends JavaPlugin {
             }
             if(input.equals("personality")){
                 if(args.length==0) {
-                    player.sendMessage("There are 3 Personalites available: type '/personality 0-4'");
-                    player.sendMessage("0 = Devon");
-                    player.sendMessage("1 = AI-Pal");
-                    player.sendMessage("2 = AGI Assistant");
-                    player.sendMessage("3 = GPT-3");
-                    player.sendMessage("4 = GPT-3");
+                    player.sendMessage("There are 5 Personalites available: type '/personality 0-4'");
                 } else {
-                    if (args.length > 0) {
-                        if (Integer.valueOf(args[0]) < 5) {
-                            PersoanlityID = Integer.valueOf(args[0]);
-                        }
+                    if (Integer.parseInt(args[0]) < 5) {
+                        PersoanlityID = Integer.parseInt(args[0]);
                     }
                 }
             }

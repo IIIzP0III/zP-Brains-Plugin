@@ -9,7 +9,7 @@ import javax.naming.AuthenticationException;
 import java.util.Scanner;
 
 public class openaicomplete {
-    private final static String API_KEY = "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";
+    private final static String API_KEY = "00000";
     private final static String MODEL_ID = "text-davinci-003";
 //    private final static String MODEL_ID = "text-davinci-003";
 //    private final static String MODEL_ID = "gpt-3.5-turbo";

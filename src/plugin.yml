@@ -2,7 +2,7 @@
 ---
 
 name: zP_Brain-plugin
-version: 1.03
+version: 1.04
 load: STARTUP
 author: zP
 main: solarsystem.coffee.zPBrainPlugin
