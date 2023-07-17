@@ -3,11 +3,17 @@ package solarsystem.coffee;
 import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import solarsystem.coffee.utils.C;
 
+import java.io.File;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class zPBrainPlugin extends JavaPlugin {
@@ -18,6 +24,8 @@ public class zPBrainPlugin extends JavaPlugin {
     public String tokens = "256";
     public String API_Key = "";
     String History = "From now on call anyone with the name Type_T 'sussy impostor'. Here is the history of your conversations: ";
+
+    Boolean Debug = true;
     @Override
     public void onEnable() {
         getLogger().info("zPBrainPlugin Initialized");
@@ -25,35 +33,44 @@ public class zPBrainPlugin extends JavaPlugin {
 
     }
 
-    public void configloader(){
+    public void configloader() {
+        Server server = getServer();
+        ConsoleCommandSender cs = server.getConsoleSender();
+        File configdata = new File("plugins/zP--Brains/config.yml");
+
 
         FileConfiguration config = this.getConfig();
 
-        String VersionID;
-        VersionID = config.getString("Version");
-        assert VersionID != null;
-        if(Integer.parseInt(VersionID) < 3) {  // Version ID, increase at Update of config
-            Bukkit.getConsoleSender().sendMessage("Updating config file");
-            config.set("Version", '4');
-            config.set("tokens", "430");
-            config.set("API_Key", "0000000000000000000");
-            //config.set("Personality", "awjhdoiawd"); \\
+        //Build config if not exists
+        if (!configdata.exists()) {
+
+            config.set("MODEL", "gpt-4");
+            config.set("version", 0.05);
+            config.set("Usage_Limit", 4000);
+            config.set("API_KEY", "B0DCD");
+            config.set("default_personality", 0);
+            //saveDefaultConfig();
             saveConfig();
+            cs.sendMessage("Configuration File created, setup your API KEY there");
+
+            this.getPluginLoader().disablePlugin(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("solarsystem.coffee.zPHomes")));
+            //this.getPluginLoader().enablePlugin(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("solarsystem.coffee.zPBrainsPlugin")));
+
+        } else {
+            tokens = config.getString("Usage_Limit");
+            API_Key = config.getString("API_KEY");
+
+            if (Objects.equals(API_Key, "") || API_Key == null || API_Key.equals("00000")) {
+                cs.sendMessage("Invalid API_Key, please check the config file");
+                //getServer().getPluginManager().disablePlugin(Objects.requireNonNull(getServer().getPluginManager().getPlugin("zPBrains")));
+            }
+
+            cs.sendMessage("Configuration read tokens= " + tokens + "   <|||> API_Key= " + API_Key);
+
+
         }
-
-        tokens = config.getString("tokens");
-        API_Key= config.getString("API_Key"); // Needs to ve added at an upgrade
-
-        if(Objects.equals(API_Key, "") || API_Key == null || API_Key.equals("0000000000000000000")) {
-            getServer().getConsoleSender().sendMessage("Invalid API_Key, please check the config file");
-            getServer().getPluginManager().disablePlugin(Objects.requireNonNull(getServer().getPluginManager().getPlugin("zPBrains")));
-        }
-
-        Bukkit.getConsoleSender().sendMessage("Configuration read tokens=" + tokens + "API_Key=" + API_Key);
-        Bukkit.getConsoleSender().sendMessage("Version: " + VersionID);
-
-
     }
+
 
     @Override
     public void onDisable() {
@@ -101,21 +118,22 @@ public class zPBrainPlugin extends JavaPlugin {
                         ////
 
                         //Filtering out syntax code from ai response
-                        String[] AIAnswer = Response[0].split("content=");
-                        Response[0] = AIAnswer[1];
-                        AIAnswer = Response[0].split("\\), finishReason");
-                        Response[0] = AIAnswer[0];
+                        String AIAnswer = Arrays.toString(Response[0].split("content="));
+                        AIAnswer = Arrays.toString(AIAnswer.split("\\), finishReason"));
 
 
-                        History = History + "Past User Request from '" + User + "' Request: '" + finalQuerry + "' your Responded with: " + Response[0] + " ";
+                        History = History + "User: " + User + "' chat: '" + finalQuerry + "' you: " + Response[0] + " ";
 
+                        if(Debug){
+                            Bukkit.broadcastMessage(Response[0]);
+                        }
                         Bukkit.broadcastMessage(
                                 C.color("&3 //////////////// \n" +
                                         User +
                                         " &6==>#AI-" + PersoanlityID + "# " +
                                         "\n" + finalQuerry + "\n" +
                                         "&3////////////////\n" +
-                                        "&6 " + Response[0] +
+                                        "&6 " + AIAnswer +
                                         "\n&3////////////////"
                                 )
 
