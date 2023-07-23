@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/zP Brain-plugin.iml" filepath="$PROJECT_DIR$/zP Brain-plugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../zP Homes/zP Homes.iml" filepath="$PROJECT_DIR$/../zP Homes/zP Homes.iml" />
     </modules>
   </component>
 </project>

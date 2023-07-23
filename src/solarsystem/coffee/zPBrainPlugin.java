@@ -25,7 +25,7 @@ public class zPBrainPlugin extends JavaPlugin {
     public String API_Key = "";
     String History = "From now on call anyone with the name Type_T 'sussy impostor'. Here is the history of your conversations: ";
 
-    Boolean Debug = true;
+    Boolean Debug = false;
     @Override
     public void onEnable() {
         getLogger().info("zPBrainPlugin Initialized");
@@ -36,7 +36,7 @@ public class zPBrainPlugin extends JavaPlugin {
     public void configloader() {
         Server server = getServer();
         ConsoleCommandSender cs = server.getConsoleSender();
-        File configdata = new File("plugins/zP--Brains/config.yml");
+        File configdata = new File("plugins/zP_Brain/config.yml");
 
 
         FileConfiguration config = this.getConfig();
@@ -53,8 +53,8 @@ public class zPBrainPlugin extends JavaPlugin {
             saveConfig();
             cs.sendMessage("Configuration File created, setup your API KEY there");
 
-            this.getPluginLoader().disablePlugin(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("solarsystem.coffee.zPHomes")));
-            //this.getPluginLoader().enablePlugin(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("solarsystem.coffee.zPBrainsPlugin")));
+            this.getPluginLoader().disablePlugin(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("solarsystem.coffee.zPBrainPlugin")));
+            //this.getPluginLoader().enablePlugin(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("solarsystem.coffee.zPBrainPlugin")));
 
         } else {
             tokens = config.getString("Usage_Limit");
@@ -117,25 +117,26 @@ public class zPBrainPlugin extends JavaPlugin {
 
                         ////
 
-                        //Filtering out syntax code from ai response
-                        String AIAnswer = Arrays.toString(Response[0].split("content="));
-                        AIAnswer = Arrays.toString(AIAnswer.split("\\), finishReason"));
-
+                            //Filtering out syntax code from ai response
+                            String[] AIAnswer = Response[0].split("content=");
+                            Response[0] = AIAnswer[1];
+                            AIAnswer = Response[0].split("\\), finishReason");
+                            Response[0] = AIAnswer[0];
 
                         History = History + "User: " + User + "' chat: '" + finalQuerry + "' you: " + Response[0] + " ";
 
-                        if(Debug){
-                            Bukkit.broadcastMessage(Response[0]);
-                        }
-                        Bukkit.broadcastMessage(
-                                C.color("&3 //////////////// \n" +
-                                        User +
-                                        " &6==>#AI-" + PersoanlityID + "# " +
-                                        "\n" + finalQuerry + "\n" +
-                                        "&3////////////////\n" +
-                                        "&6 " + AIAnswer +
-                                        "\n&3////////////////"
-                                )
+                            History = History + "Past User Request from '" + User + "' Request: '" + finalQuerry + "' your Responded with: " + Response[0] + " ";
+
+                            Bukkit.broadcastMessage(
+                                    C.color("" +
+                                                    "&3 //////////////// \n" +
+                                                            User  +
+                                            " &6==>#AI-" + PersoanlityID + "# " +
+                                                    "\n" + finalQuerry +"\n"   +
+                                                    "&3////////////////\n"   +
+                                                    "&6 " + Response[0] + ""    +
+                                                    "\n&3////////////////"
+                                    )
 
                         );
                         //getServer().getScheduler().cancelTask(finalTaskID);

@@ -1,7 +1,7 @@
 ## YAML Template.
 ---
 
-name: zP_Brain-plugin
+name: zP_Brain
 version: 1.04
 load: STARTUP
 author: zP

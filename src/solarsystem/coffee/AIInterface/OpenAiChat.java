@@ -9,6 +9,7 @@ import org.bukkit.Server;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class OpenAiChat extends JavaPlugin {
 
     public static String Request(String API_KEY, String ChatRequest, String History, String User, int PersonalityID, String CharacterLimit, Server server) {
 
-        OpenAiService service = new OpenAiService(API_KEY);
+        OpenAiService service = new OpenAiService(API_KEY, Duration.ofSeconds((long) 130));
 
 
         File file = new File("plugins/zP-Plugins/ai-personalities/0");
