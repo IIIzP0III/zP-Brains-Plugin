@@ -2,7 +2,7 @@
 ---
 
 name: zP_Brain
-version: 1.04
+version: 1.4.5
 load: STARTUP
 author: zP
 main: solarsystem.coffee.zPBrainPlugin
@@ -16,3 +16,4 @@ commands:
   personality:
     description: /personality number
     permission: Brains.openai
+
